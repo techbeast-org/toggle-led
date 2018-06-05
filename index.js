@@ -23,7 +23,6 @@ gpio.write(7, true, function(err) {
         console.log('Written True to pin');
 	console.log(path.join(__dirname, 'public'));
 	return res.sendFile(path.join(__dirname + '/views/index.html'));
-	res.alert("LED is ON");
 
     });
 
@@ -36,9 +35,7 @@ gpio.write(7, false, function(err) {
         console.log('Written False to pin');
 	console.log(path.join(__dirname, 'public'));
 	return res.sendFile(path.join(__dirname + '/views/index.html'));
-	res.alert("LED is OFF");
-
-  
+	  
   });
 
 });
