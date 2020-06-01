@@ -1,26 +1,22 @@
 <html>
 <body>
 <meta name="viewport" content="width=500, initial-scale=1"> <!--This line of code is for mobile responsive -->
-<div class="BorderMargin">
+<h1 align="center">Toggle a simple LED</h1>
+<h2 align="center"> The Hello world in the world of Electronics</h1>
+<div class="BorderMargin" align="center">
   <image src = '/images/LED.png' alt="LED" style="width:180px;height:180px;">
 
   <form action="/led/on" method="post">
-    <button type="submit" onclick="alerton()" class="button">LED On </button>
-      <button type="submit" onclick="alertoff()" formmethod="post" formaction="/led/off" class="button button3">LED Off</button>
+   <button type="submit" formmethod="post" formaction="/led/on" class="button button3">LED On </button>
+      <button type="submit" formmethod="post" formaction="/led/off" class="button button3">LED Off</button>
 
   </form>
+
+<p align="center">Check out<a href="https://techbeast.org"> Techbeast.org</a> for more fun Learning !!</p>
 
 
 
 </div>
-<script>
-function alerton() {
-alert("Led is ON now");  
-}
-function alertoff() {
- alert("Led is OFF now");
-}
 
-</script>
 </body>
 </html>
